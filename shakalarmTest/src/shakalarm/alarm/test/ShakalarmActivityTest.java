@@ -17,11 +17,10 @@ import android.widget.TextView;
 public class ShakalarmActivityTest extends ActivityInstrumentationTestCase2<ShakalarmActivity> {
 	private ShakalarmActivity shakalarmActivity;
 	private Alarm alarm;
-
 	private TextView acceleration_textView_x;
 	private TextView acceleration_textView_y;
 	private TextView acceleration_textView_z;
-
+	
 	private float acceleration_x;
 	private float acceleration_y;
 	private float acceleration_z;

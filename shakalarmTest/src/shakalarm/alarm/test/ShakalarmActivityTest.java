@@ -79,7 +79,8 @@ public class ShakalarmActivityTest extends ActivityInstrumentationTestCase2<Shak
 	@UiThreadTest
 	public void testShakeTillStop() throws InterruptedException {
 		Thread.sleep(1000);
-		for (int i = 0; i < shakalarmActivity.getShakeCountDown(); ++i) {
+		int initial_countdown = shakalarmActivity.getShakeCountDown();
+		for (int i = 0; i <  initial_countdown * 2; ++i) { // shake two times
 			shakalarmActivity.onShake(10f);
 		}
 		assertTrue(this.shakalarmActivity.isFinishing());
